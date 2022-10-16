@@ -10,6 +10,14 @@ gsap.from(".first-title", {
   duration: 1,
 });
 
+gsap.from(".title-info", {
+  scrollTrigger: ".title-info",
+  y: -50,
+  opacity: 0,
+  delay: 2,
+  duration: 1,
+});
+
 gsap.from(".fade1", {
   scrollTrigger: {
     trigger: ".fade1",
@@ -89,15 +97,16 @@ gsap.from(".ray", {
   duration: 1,
 });
 
-gsap.from(".event", {
-  scrollTrigger: {
-    trigger: ".event",
-    toggleActions: "restart none none none",
-  },
-  scale: 1.2,
-  opacity: 0,
-  duration: 2,
-});
+// gsap.from(".event", {
+//   scrollTrigger: {
+//     trigger: ".event",
+//     toggleActions: "restart none none none",
+//   },
+//   y: 100,
+//   opacity: 0,
+//   delay: 0.5,
+//   duration: 1,
+// });
 
 // gsap.from(".event", {
 //   scrollTrigger: {
@@ -121,7 +130,7 @@ gsap.from(".event", {
 
 gsap.from(".last", {
   scrollTrigger: {
-    trigger: ".fade7",
+    trigger: ".last",
     toggleActions: "restart none none none",
   },
   border: "10px solid rgba(39, 128, 245, 0)",
