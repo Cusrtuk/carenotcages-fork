@@ -25,12 +25,22 @@ section {
   margin: 10vmin;
 }
 
+.down-arrow-wrapper {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  /* display: flex; */
+  justify-content: center;
+  display: none;
+}
+
 h3,
 h1,
 p {
   text-align: justify;
   text-justify: inter-cluster;
   hyphens: auto;
+  overflow-wrap: break-word;
 }
 
 p,
@@ -65,6 +75,10 @@ ol {
 }
 
 /* ////////////////////////// */
+
+section:first-of-type {
+  margin-top: 0;
+}
 
 section.image {
   display: flex;
@@ -105,17 +119,23 @@ p.study-right {
   margin-left: 30%;
 }
 
+.solutions-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
 div.solutions {
   display: flex;
   text-align: left;
 
   text-justify: auto;
+  align-items: center;
+  justify-content: center;
   /* height: 200px; */
   list-style: none;
   /* gap: 3em; */
   flex-wrap: wrap;
-  min-width: 0;
-  margin: 2%;
+  /* min-width: 0; */
 }
 
 .solutions figure {
@@ -136,25 +156,33 @@ section.last-span {
   height: 100px;
 }
 
+section.last {
+  border: 10px solid black;
+}
+
+/* ////////////////////// */
+
 @media (max-width: 480px) {
   h1 {
-    font-size: x-large;
+    font-size: xx-large;
     text-align: center;
   }
   p,
   h1,
   h3 {
     margin: 3em 0em;
+    overflow-wrap: break-word;
   }
+
   p {
-    font-size: 1.3em;
+    font-size: 1.65em;
   }
   section {
     margin: 3em 0em;
   }
 
   ol p {
-    font-size: 1.3em;
+    font-size: 1.65em;
   }
   ol {
     margin: 0;
@@ -168,14 +196,31 @@ section.last-span {
     display: block;
   }
 
-  .solutions-wrapper section.last p {
+  .solutions-wrapper p {
     text-align: center;
   }
+
+  /* .solutions-wrapper {
+    display: grid;
+    place-items: center;
+    width: 100%;
+  } */
+
+  div.solutions {
+    width: 80%;
+  }
+
+  .solutions figcaption {
+    font-size: x-large;
+  }
+
   section.last {
     background: var(--green);
   }
 
-  .last {
+  .last p {
     background: var(--green);
+    margin: 4%;
+    text-align: center;
   }
 }
