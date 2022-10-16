@@ -176,6 +176,7 @@ section.last {
 
   p {
     font-size: 1.65em;
+    overflow-wrap: break-word;
   }
   section {
     margin: 3em 0em;
