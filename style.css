@@ -1,7 +1,7 @@
 /* /////////////// */
 
 :root {
-  --green: #b4d8dc;
+  --green: #bae3ba;
   --dark: #32324e;
   --grey: #eaeaea;
   --light-green: #c9cfce;
@@ -168,6 +168,25 @@ section.last-span {
 
 section.last {
   border: 10px solid black;
+  background: var(--green);
+}
+
+/* ////////////////////// */
+
+@media (max-width: 900px) {
+  img.sam {
+    width: 100%;
+    padding-top: 2em;
+    margin: 0 auto;
+  }
+  section.image {
+    display: block;
+    display: grid;
+    align-items: center;
+  }
+  div.caption {
+    max-width: 800px;
+  }
 }
 
 /* ////////////////////// */

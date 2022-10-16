@@ -18,7 +18,7 @@ gsap.from(".title-info", {
   },
   y: -50,
   opacity: 0,
-  delay: 2,
+  delay: 1,
   duration: 1,
 });
 
@@ -36,28 +36,17 @@ gsap.from(".fade2", {
   scrollTrigger: {
     trigger: ".fade2",
     // scrub: true,
-    toggleActions: "restart none none none",
+    // toggleActions: "restart none none none",
   },
   y: -50,
   opacity: 0,
-  duration: 3,
+  duration: 1,
 });
 
 gsap.from(".fade3", {
   scrollTrigger: {
     trigger: ".fade3",
-    toggleActions: "restart none none none",
-  },
-  y: -50,
-  opacity: 0,
-  duration: 3,
-});
-
-gsap.from(".fade4", {
-  scrollTrigger: {
-    trigger: ".fade4",
-    scrub: true,
-    toggleActions: "restart none none none",
+    // toggleActions: "restart none none none",
   },
   y: -50,
   opacity: 0,
@@ -68,18 +57,29 @@ gsap.from(".sam", {
   scrollTrigger: {
     trigger: ".sam",
     scrub: true,
-    toggleActions: "restart none none none",
+    // toggleActions: "restart none none none",
   },
-  y: -100,
+  y: -150,
   opacity: 0,
   //   duration: 1.5,
+});
+
+gsap.from(".fade4", {
+  scrollTrigger: {
+    trigger: ".fade4",
+    // scrub: true,
+    // toggleActions: "restart none none none",
+  },
+  y: -50,
+  opacity: 0,
+  duration: 3,
 });
 
 gsap.from(".study-left", {
   scrollTrigger: {
     trigger: ".study-left",
-    // scrub: true,
-    toggleActions: "restart none none none",
+    start: "top 70%",
+    // toggleActions: "restart none none none",
   },
   x: -150,
   opacity: 0.5,
@@ -89,12 +89,11 @@ gsap.from(".study-left", {
 gsap.from(".study-right", {
   scrollTrigger: {
     trigger: ".study-right",
-    // scrub: true,
-    // start: "top center",
-    toggleActions: "restart none none none",
+    start: "top 70%",
+    // toggleActions: "restart none none none",
   },
-  x: 150,
-  opacity: 0.5,
+  x: 250,
+  opacity: 0,
   duration: 1,
 });
 
@@ -138,11 +137,59 @@ gsap.from(".ray", {
 //   duration: 2,
 // });
 
+gsap.from(".heart", {
+  scrollTrigger: {
+    trigger: ".heart",
+    scrub: true,
+    start: "center bottom",
+    end: "top center",
+    toggleActions: "restart none none none",
+  },
+  x: -100,
+  //   duration: 2,
+});
+
+gsap.from(".house", {
+  scrollTrigger: {
+    trigger: ".house",
+    scrub: true,
+    start: "center bottom",
+    end: "top center",
+    toggleActions: "restart none none none",
+  },
+  x: -50,
+  //   duration: 2,
+});
+
+gsap.from(".head", {
+  scrollTrigger: {
+    trigger: ".head",
+    scrub: true,
+    start: "center bottom",
+    end: "top center",
+    toggleActions: "restart none none none",
+  },
+  x: 50,
+  //   duration: 2,
+});
+
+gsap.from(".conflict", {
+  scrollTrigger: {
+    trigger: ".conflict",
+    scrub: true,
+    start: "center bottom",
+    end: "top center",
+    toggleActions: "restart none none none",
+  },
+  x: 100,
+  //   duration: 2,
+});
+
 gsap.from(".last", {
   scrollTrigger: {
     trigger: ".last",
     toggleActions: "restart none none none",
   },
   border: "10px solid rgba(39, 128, 245, 0)",
-  duration: 6,
+  duration: 20,
 });
