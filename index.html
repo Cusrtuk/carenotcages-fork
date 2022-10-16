@@ -6,31 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>No New Jail</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
   </head>
   <body>
     <div class="down-arrow-wrapper">
       <img class="down-arrow" src="./scroll-down-arrow.gif" alt="" />
     </div>
-    <section>
-      <h1>
+    <section class="title-wrapper fade1">
+      <h1 class="first-title" id="title">
         Monroe County and Bloomington city government are planning the
         construction of
         <u>a new, bigger jail.</u>
       </h1>
-      <p>
-        The county is about to buy 87 acres of land ($10+ million) by Fullerton
-        Pike, and build a large facility ($50-60 million), with more
-        construction in the future. They're also talking about building a new
-        juvie there.
-      </p>
-      <p>
-        <strong>
-          They plan to use money from the recent income tax increase to fund the
-          project.</strong
-        >
-      </p>
+      <div class="title-info">
+        <p>
+          The county is about to buy 87 acres of land ($10+ million) by
+          Fullerton Pike, and build a large facility ($50-60 million), with more
+          construction in the future. They're also talking about building a new
+          juvie there.
+        </p>
+        <p>
+          <strong>
+            They plan to use money from the recent income tax increase to fund
+            the project.</strong
+          >
+        </p>
+      </div>
     </section>
-    <section>
+    <section class="fade2">
       <h1>
         <strong>Before</strong> spending $70 million, we think the County should
         think things through.
@@ -49,7 +53,7 @@
         </li>
       </ol>
     </section>
-    <section class="image">
+    <section class="image fade3">
       <img class="sam" src="./sam-crowe.webp" alt="Sam Crowe, Jail Commander" />
       <div class="caption">
         <p><strong>"If you build it, they're gonna fill it."</strong></p>
@@ -63,11 +67,12 @@
         </p>
       </div>
     </section>
-    <section>
+    <section class="fade4">
       <p>
         Local addiction & mental health services, (especially grassroots
-        organizations that don't work closely with the police) don't have enough
-        funding. Housing and food is only getting more expensive here.
+        organizations that don't work closely with the police) do not have
+        enough funding. The cost of living is quickly becoming more expensive
+        here. What all are we talking about when we talk about "crime"?
       </p>
       <p>
         The bottom line is that putting struggling people in cages, and branding
@@ -76,7 +81,7 @@
       </p>
     </section>
 
-    <section class="study">
+    <section class="study fade5">
       <p class="study-left">
         "...reduce incarceration by implementing non- law-enforcement crisis
         interventions [and] alternatives to incarceration."
@@ -85,22 +90,24 @@
         "...jail is never going to be an effective mental health treatment
         provider and should not be relied upon as such."
       </p>
-      <p>
+      <p class="ray">
         <em
           >—— 2021 Ray-JCI study, the latest criminal justice recommendations
           commissioned by the county</em
         >
       </p>
     </section>
-    <section class="event"><img src="./potluck-flyer.jpg" alt="" /></section>
-    <section>
+    <section class="event fade6">
+      <img src="./potluck-flyer.jpg" alt="" />
+    </section>
+    <section class="fade7">
       <p><strong>We don't have to do this.</strong></p>
       <p>
         The solutions to "crime" are already here, and just need the real
         financial and legal support of people in power.
       </p>
     </section>
-    <section class="solutions-wrapper">
+    <section class="fade8 solutions-wrapper">
       <div class="solutions">
         <figure>
           <img src="./heart.png" alt="" />
@@ -128,16 +135,17 @@
         </figure>
       </div>
     </section>
-    <section class="last-span"></section>
+    <section class="fade9 last-span"></section>
     <section class="last">
       <p>
         We're working on doing whatever it takes to get our tax dollars to fund
         care instead of more cages. We meet every thursday 6-7 at the Overlook
         Community Center (611 W 12th St.), and you can reach us at
-        carenotcages.moco@gmail.com
+        carenotcages.monroecounty@gmail.com
       </p>
     </section>
 
     <section></section>
+    <script src="./animate.js"></script>
   </body>
 </html>
