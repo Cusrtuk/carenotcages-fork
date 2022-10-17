@@ -81,7 +81,7 @@ gsap.from(".study-left", {
     start: "top 70%",
   },
   x: -150,
-  opacity: 0.5,
+  opacity: 0,
   duration: 1,
 });
 
