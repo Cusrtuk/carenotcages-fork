@@ -79,6 +79,7 @@ gsap.from(".study-left", {
   scrollTrigger: {
     trigger: ".study-left",
     start: "top 70%",
+    // toggleActions: "play complete reverse reset",
   },
   x: -150,
   opacity: 0,
