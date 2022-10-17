@@ -145,7 +145,8 @@ gsap.from(".heart", {
     end: "top center",
     toggleActions: "restart none none none",
   },
-  x: -100,
+  x: -300,
+  opacity: 0,
   //   duration: 2,
 });
 
@@ -157,7 +158,21 @@ gsap.from(".house", {
     end: "top center",
     toggleActions: "restart none none none",
   },
-  x: -50,
+  x: -150,
+  opacity: 0,
+  //   duration: 2,
+});
+
+gsap.from(".emt", {
+  scrollTrigger: {
+    trigger: ".emt",
+    scrub: true,
+    start: "center bottom",
+    end: "top center",
+    toggleActions: "restart none none none",
+  },
+  // x: -300,
+  opacity: 0,
   //   duration: 2,
 });
 
@@ -169,7 +184,8 @@ gsap.from(".head", {
     end: "top center",
     toggleActions: "restart none none none",
   },
-  x: 50,
+  x: 150,
+  opacity: 0,
   //   duration: 2,
 });
 
@@ -181,7 +197,8 @@ gsap.from(".conflict", {
     end: "top center",
     toggleActions: "restart none none none",
   },
-  x: 100,
+  x: 300,
+  opacity: 0,
   //   duration: 2,
 });
 
