@@ -171,6 +171,31 @@ section.last {
   background: var(--green);
 }
 
+.insta-wrapper {
+  min-height: 100px;
+  display: grid;
+  align-items: center;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.insta {
+  width: 75px;
+  padding: 10px;
+  border-radius: 10%;
+  margin: 0vmin auto 5vmin auto;
+  transform:translateX(-50%)
+  /* padding: 5%; */
+  transition: 1s;
+}
+
+img.insta:hover {
+  transition: 3s;
+  cursor: pointer;
+  animation: linear 1s wobble-horizontal;
+  transform: perspective(1px) translateZ(0);
+}
+
 /* ////////////////////// */
 
 @media (max-width: 900px) {
@@ -276,5 +301,28 @@ section.last {
 
   .ray {
     text-align: center;
+  }
+}
+
+/* ////////////// */
+
+@keyframes wobble-horizontal {
+  16.65% {
+    transform: translateX(8px);
+  }
+  33.3% {
+    transform: translateX(-6px);
+  }
+  49.95% {
+    transform: translateX(4px);
+  }
+  66.6% {
+    transform: translateX(-2px);
+  }
+  83.25% {
+    transform: translateX(1px);
+  }
+  100% {
+    transform: translateX(0);
   }
 }
