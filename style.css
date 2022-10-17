@@ -257,4 +257,24 @@ section.last {
     margin: 4%;
     text-align: center;
   }
+
+  p.caption {
+    text-align: center;
+  }
+  .caption p:nth-child(2) {
+    text-align: center;
+  }
+  p.study-left {
+    margin-right: 10%;
+    text-align: left;
+  }
+
+  p.study-right {
+    margin-left: 10%;
+    text-align: right;
+  }
+
+  .ray {
+    text-align: center;
+  }
 }
