@@ -204,18 +204,21 @@ section.last {
   }
 
   p {
-    font-size: 1.65em;
+    font-size: 1.4em;
     overflow-wrap: break-word;
+    text-align: left;
   }
   section {
     margin: 3em 0em;
   }
 
   ol p {
-    font-size: 1.65em;
+    font-size: 1.4em;
+    padding: 0;
+    margin: 1.5em 0;
   }
   ol {
-    margin: 0;
+    margin: 0 0 0 -10px;
   }
 
   img.sam {

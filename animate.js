@@ -79,7 +79,6 @@ gsap.from(".study-left", {
   scrollTrigger: {
     trigger: ".study-left",
     start: "top 70%",
-    // toggleActions: "restart none none none",
   },
   x: -150,
   opacity: 0.5,
