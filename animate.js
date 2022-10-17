@@ -144,7 +144,7 @@ gsap.from(".heart", {
     end: "top center",
     toggleActions: "restart none none none",
   },
-  x: -300,
+  x: -125,
   opacity: 0,
   //   duration: 2,
 });
@@ -159,6 +159,7 @@ gsap.from(".house", {
   },
   x: -150,
   opacity: 0,
+  ease: "power4",
   //   duration: 2,
 });
 
@@ -172,6 +173,7 @@ gsap.from(".emt", {
   },
   // x: -300,
   opacity: 0,
+  ease: "power4",
   //   duration: 2,
 });
 
@@ -185,6 +187,7 @@ gsap.from(".head", {
   },
   x: 150,
   opacity: 0,
+  ease: "power4",
   //   duration: 2,
 });
 
@@ -196,8 +199,9 @@ gsap.from(".conflict", {
     end: "top center",
     toggleActions: "restart none none none",
   },
-  x: 300,
+  x: 150,
   opacity: 0,
+  ease: "power4",
   //   duration: 2,
 });
 
