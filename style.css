@@ -179,7 +179,7 @@ section.last {
   width: 100%;
 }
 
-.insta {
+.insta, .petition {
   width: 75px;
   padding: 10px;
   border-radius: 10%;
@@ -189,7 +189,7 @@ section.last {
   transition: 1s;
 }
 
-img.insta:hover {
+img.insta:hover, img.petition:hover  {
   transition: 3s;
   cursor: pointer;
   animation: linear 1s wobble-horizontal;
