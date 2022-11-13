@@ -100,7 +100,7 @@ gsap.from(".study-right", {
 gsap.from(".ray", {
   scrollTrigger: {
     trigger: ".ray",
-    toggleActions: "restart none none none",
+    toggleActions: "play none none none",
   },
   opacity: 0,
   duration: 1,
